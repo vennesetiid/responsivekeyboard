@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet); 
+     font-family: "Audiowide", sans-serif;
+     text-align: center;
+    }
+    
+    *:focus {
+        outline: none;
+    }
+    .keyboardInput {
+      text-align: center;
+      font-size: 25px;
+      background: beige;
+      border: 5px solid black;
+      border-radius: 20px;
+      height: 300px;
+      width: 60%;
+      margin-top: 50px;
+      box-shadow: 
+        -3px -3px beige,
+        -6px -6px yellow,
+        -9px -9px orange;
+    }
+    
+    .keyboard {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: 
+     linear-gradient(to right, orange, yellow, green, cyan, blue, violet);  
+        box-shadow: 0 0 30px black;
+        transition: bottom 0.4s;
+    }
+    
+    .hiddenKeyboard {
+        bottom: -100%;
+    }
+    
+    .keyboardKeys {
+        text-align: center;
+    }
+    
+    .keyboardSingleKey {
+        height: 45px;
+        width: 45px;
+        max-width: 100px;
+        margin: 3px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background: beige; 
+        color: black;
+        font-size: 1.5rem;
+        outline: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        padding: 0;
+        position: relative;
+    }
+    
+    .keyboardSingleKey:hover {
+       background: black;
+        border: 3px solid beige;
+        color: beige; 
+    }
+    
+    .keyboardWideKey {
+        width: 60px;
+        height: 50px;
+        
+    }
+    
+    .keyboardExtraWideKey {
+        width: 36%;
+        max-width: 500px;
+        border-radius: 10px;
+    }
+    
+    .keyboardActiveKey::after {
+        content: '';
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: orange;
+        border-radius: 50%;
+    }
+    
+    .keyboardDarkKey {
+        background: black;
+        border: 3px solid beige;
+        color: beige;
+        position: relative;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
